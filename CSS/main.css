@@ -1,0 +1,284 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #dcdcdc, #c8cdcf);
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(to right, #0f1011, #4f4e4e);
+    padding: 30px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color:rgb(12, 11, 11);
+    background-color: rgba(236, 228, 228, 0.868);
+    border-radius: 5px;
+}
+
+/* Main Container with Sidebars */
+.main-container {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+/* Left Sidebar */
+#sidebar1 {
+    flex: 1;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#sidebar1 h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#sidebar1 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stars {
+    color: #FFD700;
+    margin-left: 10px;
+}
+
+.feedback {
+    margin-bottom: 20px;
+}
+
+#sidebar1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    flex: 3;
+    padding: 15px;
+}
+
+/* Animated Text for Welcome Message */
+#animatedText {
+    font-weight: 700;
+    font-size: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, stop 1s 1s forwards;
+    border-right: 2px solid #333333;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes stop {
+    0% { border-right: 2px solid #333; }
+    100% { border-right: none; }
+}
+
+.home-content {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.home-content img {
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+/* Image Animation */
+.home-image {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInZoom 1s ease-out forwards;
+}
+
+@keyframes fadeInZoom {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+h2 {
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-weight: 500;
+}
+
+/* Right Sidebar */
+#sidebar2 {
+    flex: 1;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+#sidebar2 h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#sidebar2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar2 li {
+    margin-bottom: 10px;
+}
+
+#sidebar2 a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #0f1011, #4f4e4e);
+    color: #fff;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens (up to 992px) */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    #sidebar1, #sidebar2 {
+        border: none;
+        padding: 15px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        text-align: left;
+    }
+}
+
+/* Small tablets and larger mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #sidebar1, #sidebar2 {
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
+}
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center;
+        padding: 10px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .main-container {
+        padding: 5px;
+    }
+
+    #sidebar1, #sidebar2 {
+        padding: 8px;
+    }
+
+    #sidebar1 ul, #sidebar2 ul {
+        padding: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .main-content {
+        padding: 5px;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.1em;
+    }
+}

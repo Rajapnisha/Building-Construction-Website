@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Nisha Construction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for dark theme */
+        body {
+            color: #ffffff;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1c1c1c;
+        }
+        .card {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        .card-body {
+            border-top: 1px solid #e0e0e0;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #121111;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            filter: invert(1);
+        }
+        .service-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .service-img {
+                height: 250px; /* Smaller image height for tablets */
+            }
+            .card-body p {
+                font-size: 0.9rem; /* Smaller font size for readability */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-img {
+                height: 200px; /* Smaller image height for mobile */
+            }
+            .card-body p {
+                font-size: 0.85rem;
+            }
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: #ffffff; /* Lighter arrows on smaller screens */
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .carousel-inner .row {
+                flex-direction: column; /* Stack items vertically on mobile */
+            }
+            .service-img {
+                height: 180px; /* Smaller height for mobile */
+            }
+            .card-body p {
+                font-size: 0.8rem;
+            }
+            footer p {
+                font-size: 0.8rem; /* Smaller footer text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center p-4">
+        <a href="contact.html">
+            <h1>Our Project</h1>
+        </a>
+    </header>
+
+    <div id="servicesCarousel" class="carousel slide mt-5" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="image/modern house.jpg" alt="Custom project" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern House</h5>
+                                <p class="card-text">Nisha Construction presents our Modern House, where contemporary design meets functionality. This stunning home features an open floor plan, sustainable materials, and smart home technology for a luxurious living experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="image/luxury palace.jpg" alt="Custom project" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Luxury House</h5>
+                                <p class="card-text">Nisha Construction is proud to showcase our Luxury Palace, a breathtaking architectural masterpiece that embodies opulence and elegance. This exquisite residence boasts grand entrances and spacious living areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="image/apartment house.jpg" alt="Custom project" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartment</h5>
+                                <p class="card-text">Nisha Construction presents our stunning Apartment project, designed for modern living without compromising comfort. These thoughtfully crafted spaces offer contemporary layouts and stylish interiors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="image/kerala house.jpg" alt="Custom project" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Kerala House</h5>
+                                <p class="card-text">Nisha Construction presents our Kerala House project, showcasing traditional architecture infused with modern comforts. Inspired by Kerala's rich cultural heritage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <img src="image/simple house.jpg" alt="Custom project" class="service-img">
+                            <div class="card-body">
+                                <h5 class="card-title">Simple House</h5>
+                                <p class="card-text">Nisha Construction specializes in Simple Houses that embody elegance and functionality. Our designs focus on minimalism and practicality, ensuring every space serves a purpose.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card service-card">
+                            <a href="contact.html">
+                                <img src="image/traditional house.jpg" alt="Custom project" class="service-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Traditional House</h5>
+                                <p class="card-text">Nisha Construction is dedicated to building Traditional Houses that celebrate cultural heritage and timeless craftsmanship with classic architectural elements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <footer class="text-center mt-5 text-white">
+        <p>&copy; 2024 Nisha Construction</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

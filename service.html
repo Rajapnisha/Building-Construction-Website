@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Nisha Construction</title>
+</head>
+<body>
+    <section id="services" class="services-section">
+        <a href="project.html">
+            <h2>Our Services</h2>
+        </a>
+        
+        <div class="services-container">
+            <div class="service">
+                <h3>Residential Construction</h3>
+                <img src="image/resdansial cons.jpg" alt="Residential Construction" class="service-image">
+                <p>Quality homes tailored to your needs and lifestyle.</p>
+                <a href="pdf/Nisha modernhomes.pdf" target="_blank">
+                    <button>More Details</button>
+                </a>
+            </div>
+            <div class="service">
+                <h3>Commercial Construction</h3>
+                <img src="image/comercial cons.jpg" alt="Commercial Construction" class="service-image">
+                <p>Professional and timely commercial building services.</p>
+                <a href="pdf/Nisha modernhomes.pdf" target="_blank">
+                    <button>More Details</button>
+                </a>
+            </div>
+            <div class="service">
+                <h3>Renovations & Remodeling</h3>
+                <a href="project.html">
+                    <img src="image/renovative image.jpg" alt="Renovations & Remodeling" class="service-image">
+                </a>
+                <p>Modernize and transform your existing space.</p>
+                <a href="pdf/Nisha modernhomes.pdf" target="_blank">
+                    <button>More Details</button>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+    /* Basic Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    .services-section {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+        justify-content: center;
+    }
+
+    .service {
+        background-color: #666;
+        padding: 1.5rem;
+        border-radius: 8px;
+        flex: 1 1 300px;
+        max-width: 300px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .service:hover {
+        transform: scale(1.05);
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    .service img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .service button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .service button:hover {
+        background-color: black;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .service {
+            flex: 1 1 45%; /* Two services per row on tablets */
+            max-width: 45%;
+        }
+
+        .services-section h2 {
+            font-size: 1.75rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .services-container {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .service {
+            flex: 1 1 100%; /* Full width on mobile */
+            max-width: 100%;
+            padding: 1rem;
+        }
+
+        .services-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .service h3 {
+            font-size: 1.3rem;
+        }
+
+        .service p {
+            font-size: 0.9rem;
+        }
+
+        .service button {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+</html>
