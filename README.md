@@ -1,4 +1,4 @@
-#Building Construction Website
+# Building Construction Website
 
 The Building Construction Website is a responsive, multi-page static website designed to represent a construction company's services, ongoing projects, and contact information. Developed using HTML5 and CSS3, the project focuses on clean design, user-friendly navigation, and a visual-rich layout that uses construction-related imagery to enhance user experience.
 
